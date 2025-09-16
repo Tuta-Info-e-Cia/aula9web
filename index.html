@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css do bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">SENAC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quemsomos">Quem Somos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Funcionário
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#lista">Lista</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Detalhe </a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="bg-primary text-white text-center">
+            <h1>HOME</h1>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/central-do-brasil.jpg"
+                        width="980px" height="650px"
+                        class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/2a63b3e81f7e34b8d51d24981de3d8db.jpg" 
+                        width="980px" height="650px"
+                        class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Central_do_Brasil_estação.jpg" 
+                        width="980px" height="650px"
+                        class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="quemsomos" class="bg-success text-white text-center">
+            <h1>QUEM SOMOS</h1>
+            <div class="card-group">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="lista" class="bg-secondary text-white text-center">
+            <h1>LISTA</h1>
+            <table class="table table-dark">
+                <thead>
+                    <th scope="row">1</th>
+                    <td>Simone</td>
+                    <td>S</td>
+                    <td class="table-active">@Instrutora</td>
+                </thead>
+                <tbody>
+                  <tr class="table-active">
+                    <th scope="row">2</th>
+                    <td>André</td>
+                    <td>A</td>
+                    <td class="table-active">@Aluno</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Aluan</td>
+                    <td>A</td>
+                    <td class="table-active">@Aluno</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Gilmar</td>
+                    <td>G</td>
+                    <td class="table-active">@Aluno</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+        <section id="detalhe" class="bg-danger text-white text-center">
+            <h1>DETALHE</h1>
+        </section>
+
+        <!-- Button trigger modal 
+<button type="button" class="btn btn-primary" >
+    Launch demo modal
+  </button>-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div><!-- fecha o container-->
+
+    <!-- javaScript do bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
